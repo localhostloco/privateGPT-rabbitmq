@@ -1,3 +1,42 @@
+# Python RabbitMQ Consumer Project
+
+This project consumes messages from a RabbitMQ queue, processes them using the Python program logic, and sends the results back through RabbitMQ to a Spring Boot application, which will forward them as HTTP responses to the client.
+
+## Setup and Run
+
+### Prerequisites
+
+- Python 3.x
+- RabbitMQ
+- Required Python libraries (`pika`, etc.)
+
+### Installation
+
+1. Clone the repository.
+```sh
+   git clone https://github.com/your-username/python-rabbitmq-consumer-project.git
+```
+2. Navigate to the project directory.
+```sh
+cd python-rabbitmq-consumer-project
+```
+3. Install the required libraries.
+```sh
+pip install -r requirements.txt
+```
+4. Run the Python program.
+```sh
+python main.py
+```
+
+### Security
+Ensure to follow security best practices such as securing RabbitMQ communications with TLS/SSL, configuring proper firewall rules and RabbitMQ permissions, and avoiding logging sensitive information. Additionally, sanitize and validate input data to prevent injection attacks, and encrypt sensitive data.
+
+Make sure to modify the repository URLs, any project-specific details, and any additional sections you see fit, such as `Contributing`, `License`, or `Acknowledgements`.
+
+
+######
+
 # privateGPT
 Ask questions to your documents without an internet connection, using the power of LLMs. 100% private, no data leaves your execution environment at any point. You can ingest documents and ask questions without an internet connection!
 
